@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SHOP</string>
+
+        <string-array name="options">
+            <item>+234</item>
+            <item>+44</item>
+        </string-array>
+
+
+</resources>
