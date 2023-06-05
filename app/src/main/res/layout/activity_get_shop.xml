@@ -6,6 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".GetShop">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:id="@+id/backbutton"/>
+
 
     <TextView
         android:layout_width="152dp"
@@ -82,23 +88,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.393"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="16dp">
 
-    <Spinner
-        android:layout_width="42dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="420dp"
-        android:background="@drawable/nigicon"
-        android:dropDownWidth="match_parent"
-        android:entries="@array/options"
-        android:gravity="start"
-        android:popupBackground="@color/white"
-        android:spinnerMode="dropdown"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.065"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+
+
+    </EditText>
+
+
+
+
 
     <TextView
         android:id="@+id/textView3"
@@ -131,14 +129,15 @@
         style="?attr/materialButtonOutlinedStyle"
         android:layout_width="363dp"
         android:layout_height="42dp"
-        android:layout_marginTop="644dp"
+        android:layout_marginTop="604dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@color/black"
         android:text="create"
         android:textColor="@color/white"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/si"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -147,9 +146,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.598"
+        app:layout_constraintVertical_bias="0.574"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="11dp" />
+
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/textInputEditText3"
@@ -163,8 +163,8 @@
         app:layout_constraintHorizontal_bias="0.34"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.665" />
-
+        app:layout_constraintVertical_bias="0.635"
+        android:inputType="textPassword"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -173,24 +173,25 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.726"
+        app:layout_constraintVertical_bias="0.699"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="17dp" />
+        tools:layout_editor_absoluteX="16dp" />
+
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/textInputEditText2"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="364dp"
         android:layout_height="46dp"
+        android:autofillHints="password"
         android:background="#E6DCDC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.361"
+        app:layout_constraintHorizontal_bias="0.34"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8"
-        android:autofillHints="password"/>
-
+        app:layout_constraintVertical_bias="0.766"
+        android:inputType="textPassword"/>
 
     <TextView
         android:id="@+id/already"
@@ -207,6 +208,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign in"
+        android:id="@+id/si"
         android:textAlignment="center"
         android:textColor="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"

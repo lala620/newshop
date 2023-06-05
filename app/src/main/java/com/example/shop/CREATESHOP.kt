@@ -11,6 +11,7 @@ class CREATESHOP : AppCompatActivity() {
 
     lateinit var createButton : Button
     lateinit var login: Button
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,5 +28,7 @@ class CREATESHOP : AppCompatActivity() {
             val intent = Intent(this@CREATESHOP,LoginActivity::class.java)
             startActivity(intent)
         }
+
+
     }
 }
