@@ -16,10 +16,12 @@ class CREATESHOP : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_createshop)
+
+
         createButton = findViewById(R.id.button)
         createButton.setOnClickListener {
             Toast.makeText(this, "WELCOME", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this@CREATESHOP,GetShop::class.java)
+            val intent = Intent(this@CREATESHOP,Getshopiko::class.java)
             startActivity(intent)
 
         }
